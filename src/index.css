@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+:root {
+  /* Theme */
+  --background-color: #ffffff;
+  --background-color-rgb: 255, 255, 255;
+
+  --text-color: #24292f;
+  --text-color-rgb: 36, 41, 47;
+
+  --color-danger-text: #c91717;
+  --color-danger-text-rgb: 201, 23, 23;
+  --color-danger-background: #ffdede;
+  --color-danger-background-rgb: 255, 222, 222;
+
+  --color-warning-text: #8f4500;
+  --color-warning-text-rgb: 143, 69, 0;
+  --color-warning-background: #ffedaa;
+  --color-warning-background-rgb: 255, 237, 170;
+
+  --line-color: #d6d6d6;
+  --line-color-rgb: 214, 214, 214;
+
+  /* Form */
+  --input-font-size: 16px;
+  --input-color: var(--text-color);
+  --input-background-color: #fafafa;
+  --input-border-color: var(--line-color);
+  --input-border-radius: 2px;
+  --input-placeholder-color: #d9d9d9;
+
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #0e0e0e;
+    --background-color-rgb: 14, 14, 14;
+
+    --text-color: #f8f8f8;
+    --text-color-rgb: 248, 248, 248;
+
+    --color-danger-text: #ff9595;
+    --color-danger-text-rgb: 255, 149, 149;
+    --color-danger-background: #3f1414;
+    --color-danger-background-rgb: 63, 20, 20;
+
+    --color-warning-text: #efbc84;
+    --color-warning-text-rgb: 239, 188, 132;
+    --color-warning-background: #493c06;
+    --color-warning-background-rgb: 73, 60, 6;
+
+    --line-color: #515151;
+    --line-color-rgb: 81, 81, 81;
+
+    --input-background-color: #232323;
+    --input-placeholder-color: #7d7d7d;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-color: var(--background-color);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 { font-size: 1.5em; }
+@media (min-width: 480px) {
+  h1 { font-size: 2em; }
+}
+
+a[href] {
+  text-decoration: none;
+}
+a[href]:hover {
+  text-decoration: underline;
+}

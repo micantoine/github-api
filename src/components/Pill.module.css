@@ -1,0 +1,22 @@
+:root {
+  --pill-color: #606060;
+  --pill-background-color: #e8e8e8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pill-color: #a4a4a4;
+    --pill-background-color: #363636;
+  }
+}
+
+.pill {
+  padding: 2px 8px;
+  margin: 2px;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.2;
+  font-size: 14px;
+  color: var(--pill-color);
+  background-color: var(--pill-background-color);
+  border-radius: 50em;
+}

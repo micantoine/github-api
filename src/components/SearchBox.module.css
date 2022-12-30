@@ -1,0 +1,13 @@
+.box {
+  display: flex;
+}
+.box > :first-child {
+  margin-right: -1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.box > :last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  min-width: 52px;
+}

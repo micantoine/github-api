@@ -1,0 +1,60 @@
+:root {
+  --pagination-disabled-nav-color: #a5a5a5;
+}
+
+.pagination {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.nav:not(a) {
+  color: var(--pagination-disabled-nav-color);
+}
+.nav:first-child {
+  margin-right: 16px;
+}
+.nav:first-child::before {
+  margin-right: 5px;
+  transform: rotate(-45deg);
+}
+.nav:first-child::before,
+.nav:last-child::after {
+  margin-top: 1px;
+  display: inline-flex;
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-left: 1px solid;
+  border-top: 1px solid;
+}
+.nav:last-child {
+  margin-left: 16px;
+}
+.nav:last-child::after {
+  margin-left: 5px;
+  transform: rotate(135deg);
+}
+
+.empty::after {
+  margin: 0 10px;
+  content: '...';
+  color: var(--pagination-disabled-nav-color);
+}
+
+.pagination button  {
+  margin: 0 2px;
+}
+
+@media (max-width: 479px) {
+  .empty, .pagination button { display: none; }
+}

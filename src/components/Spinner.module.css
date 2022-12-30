@@ -1,0 +1,21 @@
+.spinner {
+  margin: 0 auto;
+  display: inline-flex;
+  width: 1.3em;
+  height: 1.3em;
+  vertical-align: text-top;
+  border: 0.15em solid;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate3d(0,0,1, 0deg);
+  }
+
+  100% {
+    transform: rotate3d(0,0,1, 360deg);
+  }
+}

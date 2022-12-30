@@ -1,0 +1,60 @@
+:root {
+  --button-color: var(--background-color);
+  --button-color-rgb: var(--background-color-rgb);
+  --button-color-hover: var(--button-color);
+  --button-color-hover-rgb: var(--button-color-rgb);
+  --button-background-color: var(--text-color);
+  --button-background-color-rgb: var(--text-color-rgb);
+  --button-background-color-hover: rgba(var(--button-background-color-rgb), 90%);
+  --button-font-size: 14px;
+  --button-font-weight: 500;
+}
+
+.transparent {
+  --button-color: var(--text-color);
+  --button-color-hover: var(--button-color);
+  --button-background-color: transparent;
+  --button-background-color-hover: #eeeeee;
+}
+@media (prefers-color-scheme: dark) {
+  .transparent {
+    --button-color-hover: var(--background-color);
+  }
+}
+.btn {
+  padding: .438em 1.2em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: 1.45;
+  color: var(--button-color);
+  background-color: var(--button-background-color);
+  border-radius: 2px;
+  border: none;
+  box-shadow: none;
+
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  appearance: none;
+}
+
+.small {
+  padding: .25em .697em;
+  min-width: 35px;
+}
+
+.btn svg {
+  width: 18px;
+  height: 18px;
+}
+.btn path {
+  fill: currentColor;
+}
+
+.btn:hover {
+  color: var(--button-color-hover);
+  background-color: var(--button-background-color-hover);
+}

@@ -1,0 +1,35 @@
+.header{
+  padding-top: 24px;
+  text-align: center;
+}
+.title {
+  margin-top: 5px;
+}
+.resultTitle {
+  padding-bottom: 7px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-variant: all-small-caps;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--line-color);
+}
+.searchBox {
+  margin-bottom: 16px;
+}
+.progressBar {
+  margin-top: -21px;
+  margin-bottom: 19px;
+}
+
+.logo path {
+  fill: currentColor;
+}
+
+@media (min-width: 480px) {
+  .logo {
+    width: 64px;
+    height: 64px;
+  }
+}
