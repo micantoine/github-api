@@ -27,7 +27,7 @@ export const SearchService: Service = {
       alertStore.setState((_state) => ({
         title,
         message,
-        color: 'warning',
+        color: 'danger',
         show: true
       }));
 
